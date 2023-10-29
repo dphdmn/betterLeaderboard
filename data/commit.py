@@ -12,7 +12,7 @@ except FileNotFoundError:
     sys.exit(1)
 
 repo_owner = "dphdmn"
-repo_name = "betterLeadearboard"
+repo_name = "betterLeaderboard"
 commit_message = "Update data using script"
 
 github = Github(github_token)
