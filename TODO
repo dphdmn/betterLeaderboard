@@ -1,0 +1,13 @@
+Possible Future Improvements:
+
+- (Feature) Add support for replaying multiple-solves gamemodes, avgs, and blindfolded solve (if reasonable?).
+- (Feature) Highlight auto-detected cycles when applicable for clarity.
+- (Feature) Customization for weight of kinch rankings.
+
+- (Fix) Enhance the replay layout for mobile devices.
+- (Fix) Enhance compatibility with non-Chrome browsers.
+
+- (Optimization) Optimize the matrix-move function (track the zero position).
+- (Optimization) Optimize the scoreTypes checking process.
+
+- (Possible bug) Fix rare issue of multiple replays occasionally playing simultaneously (cause unknown).
