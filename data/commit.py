@@ -30,7 +30,7 @@ try:
 except Exception as e:
     file_sha = None
 
-with open(file_to_commit, 'r') as file:
+with open(file_to_commit, 'rb') as file:
     new_file_content = file.read()
 
 if file_sha:
