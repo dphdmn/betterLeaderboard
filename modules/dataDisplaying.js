@@ -457,9 +457,10 @@ function createSheetRankings(playerScores) {
                     .textContent = ">" + currentPrecentage + "%";
                 tableHeaderRow.classList.add(category);
                 playerScores[0].scores.forEach(function (score) {
+                    fakeScoreInfo = parseId(score.id); //fix for non-existing scores
                     var th = document.createElement('th');
                     var smallText = document.createElement('span');
-                    let isAverage = (score.scoreInfo.avglen !== 1);
+                    let isAverage = (fakeScoreInfo.avglen !== 1);
                     const bestValue = bestValues[score.id];
                     const newScoreLimit = getScoreLimit(currentPrecentage, bestValue, reverse, scoreType, isAverage);
                     smallText.textContent = newScoreLimit;
@@ -468,8 +469,8 @@ function createSheetRankings(playerScores) {
                     th.appendChild(document.createElement('br'));
                     th.appendChild(smallText);
                     th.classList.add("clickable");
-                    let newSize = score.scoreInfo.width + "x" + score.scoreInfo.height;
-                    let newGameMode = score.scoreInfo.gameMode;
+                    let newSize = fakeScoreInfo.width + "x" + fakeScoreInfo.height;
+                    let newGameMode = fakeScoreInfo.gameMode;
                     th.addEventListener("click", function () {
                         customSizeInput.value = newSize;
                         radioCustomSize.value = newSize;
