@@ -1377,14 +1377,14 @@ function getScoreStringNxM(time, moves, tps, scoreType, isAverage, username) {
 //_________________"Private" functions for createSheetRankings_________________
 
 function createCustomSlider() {
-    const numberOfCategories = 100;
+    const numberOfCategories = newMaxCategories;
     const slider = document.createElement("input");
     slider.type = "range";
     slider.min = 1;
     slider.max = numberOfCategories;
-    slider.value = lastSliderValue;
+    slider.value = Math.min(lastSliderValue, numberOfCategories);
     const sliderLabel = document.createElement("label");
-    sliderLabel.textContent = `${maxCategoriesForPopularString} ${lastSliderValue}`;
+    sliderLabel.textContent = `${maxCategoriesForPopularString} ${slider.value}`;
     const contentDiv = document.getElementById("contentDiv");
     contentDiv.insertBefore(sliderLabel, contentDiv.firstChild);
     contentDiv.insertBefore(slider, contentDiv.firstChild);

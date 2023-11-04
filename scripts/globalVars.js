@@ -46,3 +46,4 @@ var leaderboardTypeSelect;
 var controlTypeSelect;
 var NxMSelected;
 let eventListenerReference = null;
+var newMaxCategories;

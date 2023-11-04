@@ -583,6 +583,7 @@ function getPopularList(scores, controlType, categoriesAmount = 1, onlySquares =
         .filter(([_, count]) => count > 0)
         .map(([category, _]) => category);
     validCategories.sort((a, b) => categoryCountMap.get(b) - categoryCountMap.get(a));
+    newMaxCategories = validCategories.length;
     validCategories = validCategories.slice(0, categoriesAmount);
     const sortedCategories = validCategories.map(category => {
         const [firstNum, secondNum] = category.split(' ')[0].split('x')
