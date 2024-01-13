@@ -120,6 +120,8 @@ const userCountryMap = {
     kleb: 'United States of America',
     HOGGYSIMP: 'United States of America',
     amazingpikachu37: 'United States of America',
+    //14.01.2024
+    XejuX: 'France',
 };
 
 const countryEmojis = {
