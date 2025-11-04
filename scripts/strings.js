@@ -94,7 +94,7 @@ const hideStatsText = "Hide stats";
 const replayButtonText = "Rewind";
 const playButtonText = "Play";
 const pauseButtonText = "Pause";
-const submitVideoText = "Got a PB on video? Click here to submit!";
+const submitVideoText = "";
 const submitVideoLink = "https://docs.google.com/forms/d/e/1FAIpQLSd14jEa6wVTrRkgiuEBKdC8nvdU4JjRfVuOIuPTtkl1zzzKxA/viewform";
 const leaderboardUpdatesInfoLink = "https://github.com/search?q=repo%3Adphdmn%2FbetterLeaderboard+Update+data+using+script&type=commits&s=committer-date&o=desc";
 //const lastLeaderboardUpdateString = "Leaderboard updates up to four times a day. Latest score entry time:";
