@@ -62,7 +62,7 @@ function customReplayCheck() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("r")) {
         const rParam = urlParams.get("r");
-        window.location.href = `https://slidysim.online/replay?r=${encodeURIComponent(rParam)}`;
+        window.location.href = `https://slidysim.github.io/replay?r=${encodeURIComponent(rParam)}`;
     }
 }
 
